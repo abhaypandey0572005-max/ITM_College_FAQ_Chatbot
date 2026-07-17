@@ -48,15 +48,15 @@ const UI_TEXT = {
     footer: "Powered by ITM GIDA Gorakhpur · AI FAQ Assistant",
     placeholder: "Type your question here...",
     error: "Something went wrong. Please try again.",
-    toggleLabel: "हिं", // shown while in English -> click to switch to Hindi
+    toggleLabel: "HI", // shown while in English -> click to switch to Hinglish
   },
   hi: {
-    subtitle: "कॉलेज एफएक्यू सहायक",
-    welcome: "नमस्ते! मैं आईटीएम गोरखपुर एफएक्यू बॉट हूं। मुझसे दाखिला, फीस, कोर्स, हॉस्टल, या समय के बारे में पूछें।",
-    footer: "आईटीएम जीआईडीए गोरखपुर द्वारा संचालित · एआई एफएक्यू सहायक",
-    placeholder: "यहां अपना प्रश्न लिखें...",
-    error: "कुछ गलत हो गया। कृपया दोबारा प्रयास करें।",
-    toggleLabel: "EN", // shown while in Hindi -> click to switch to English
+    subtitle: "College FAQ Assistant",
+    welcome: "Namaste! Main ITM Gorakhpur FAQ bot hoon. Mujhse admission, fees, courses, hostel, ya timings ke baare mein poochiye.",
+    footer: "ITM GIDA Gorakhpur dwara powered · AI FAQ Assistant",
+    placeholder: "Yahan apna sawaal type karen...",
+    error: "Kuch galat ho gaya. Please dobara try karen.",
+    toggleLabel: "EN", // shown while in Hinglish -> click to switch to English
   },
 };
 
@@ -151,7 +151,7 @@ function showRelatedQuestions(relatedList) {
 
   const label = document.createElement("div");
   label.classList.add("related-label");
-  label.textContent = currentLang === "hi" ? "आप यह भी पूछ सकते हैं:" : "You might also ask:";
+  label.textContent = currentLang === "hi" ? "Aap yeh bhi pooch sakte hain:" : "You might also ask:";
   chatBox.appendChild(label);
 
   const box = document.createElement("div");
