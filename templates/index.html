@@ -2,27 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ITM Gorakhpur - College FAQ Chatbot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
   <div class="chat-container">
     <div class="chat-header">
-      <h2>ITM GIDA Gorakhpur</h2>
-      <p>College FAQ Assistant</p>
+      <div class="header-icon">🎓</div>
+      <div class="header-text">
+        <h2>ITM GIDA Gorakhpur</h2>
+        <p><span class="status-dot"></span> College FAQ Assistant</p>
+      </div>
     </div>
 
     <div class="chat-box" id="chat-box">
       <div class="message bot-message">
         Hello! I'm the ITM Gorakhpur FAQ bot. Ask me about admission, fees, courses, hostel, or timings.
       </div>
+
+      <div class="suggestions" id="suggestions">
+        <button class="chip">What is the admission process?</button>
+        <button class="chip">What is the fee for BCA?</button>
+        <button class="chip">Is hostel available?</button>
+        <button class="chip">What courses are offered?</button>
+      </div>
     </div>
 
     <div class="chat-input">
       <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off">
-      <button id="send-btn">Send</button>
+      <button id="send-btn" aria-label="Send">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M3 20L21 12L3 4V10L16 12L3 14V20Z" fill="currentColor"/>
+        </svg>
+      </button>
     </div>
+
+    <div class="chat-footer">Powered by ITM GIDA Gorakhpur · AI FAQ Assistant</div>
   </div>
 
   <script src="{{ url_for('static', filename='script.js') }}"></script>
