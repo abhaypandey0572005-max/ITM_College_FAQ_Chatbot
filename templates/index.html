@@ -19,21 +19,22 @@
       <div class="header-icon">🎓</div>
       <div class="header-text">
         <h2>ITM GIDA Gorakhpur</h2>
-        <p><span class="status-dot"></span> College FAQ Assistant</p>
+        <p><span class="status-dot"></span> <span id="header-subtitle">College FAQ Assistant</span></p>
       </div>
+      <button id="lang-toggle" aria-label="Switch language" title="Switch language">EN</button>
       <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
     </div>
 
     <div class="chat-box" id="chat-box">
-      <div class="message bot-message">
+      <div class="message bot-message" id="welcome-message">
         Hello! I'm the ITM Gorakhpur FAQ bot. Ask me about admission, fees, courses, hostel, or timings.
       </div>
 
       <div class="suggestions" id="suggestions">
-        <button class="chip">What is the admission process?</button>
-        <button class="chip">What is the fee for BCA?</button>
-        <button class="chip">Is hostel available?</button>
-        <button class="chip">What courses are offered?</button>
+        <button class="chip" data-en="What is the admission process?" data-hi="दाखिले की प्रक्रिया क्या है?">What is the admission process?</button>
+        <button class="chip" data-en="What is the fee for BCA?" data-hi="बीसीए की फीस कितनी है?">What is the fee for BCA?</button>
+        <button class="chip" data-en="Is hostel available?" data-hi="क्या हॉस्टल उपलब्ध है?">Is hostel available?</button>
+        <button class="chip" data-en="What courses are offered?" data-hi="कौन-कौन से कोर्स उपलब्ध हैं?">What courses are offered?</button>
       </div>
     </div>
 
@@ -46,7 +47,7 @@
       </button>
     </div>
 
-    <div class="chat-footer">Powered by ITM GIDA Gorakhpur · AI FAQ Assistant</div>
+    <div class="chat-footer" id="chat-footer">Powered by ITM GIDA Gorakhpur · AI FAQ Assistant</div>
   </div>
 
   <script src="{{ url_for('static', filename='script.js') }}"></script>
