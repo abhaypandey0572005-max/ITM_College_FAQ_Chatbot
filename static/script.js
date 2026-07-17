@@ -4,10 +4,15 @@ const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 const suggestions = document.getElementById("suggestions");
 const themeToggle = document.getElementById("theme-toggle");
+const langToggle = document.getElementById("lang-toggle");
 const loader = document.getElementById("loader");
+const welcomeMessage = document.getElementById("welcome-message");
+const headerSubtitle = document.getElementById("header-subtitle");
+const chatFooter = document.getElementById("chat-footer");
 
 const STORAGE_KEY = "itm_chat_history";
 const THEME_KEY = "itm_theme";
+const LANG_KEY = "itm_lang";
 
 // ---------- Loader (shown briefly on first page load) ----------
 window.addEventListener("load", () => {
@@ -33,6 +38,60 @@ themeToggle.addEventListener("click", () => {
   const newTheme = isDark ? "light" : "dark";
   applyTheme(newTheme);
   localStorage.setItem(THEME_KEY, newTheme);
+});
+
+// ---------- Language (English / Hindi) ----------
+const UI_TEXT = {
+  en: {
+    subtitle: "College FAQ Assistant",
+    welcome: "Hello! I'm the ITM Gorakhpur FAQ bot. Ask me about admission, fees, courses, hostel, or timings.",
+    footer: "Powered by ITM GIDA Gorakhpur · AI FAQ Assistant",
+    placeholder: "Type your question here...",
+    error: "Something went wrong. Please try again.",
+    toggleLabel: "हिं", // shown while in English -> click to switch to Hindi
+  },
+  hi: {
+    subtitle: "कॉलेज एफएक्यू सहायक",
+    welcome: "नमस्ते! मैं आईटीएम गोरखपुर एफएक्यू बॉट हूं। मुझसे दाखिला, फीस, कोर्स, हॉस्टल, या समय के बारे में पूछें।",
+    footer: "आईटीएम जीआईडीए गोरखपुर द्वारा संचालित · एआई एफएक्यू सहायक",
+    placeholder: "यहां अपना प्रश्न लिखें...",
+    error: "कुछ गलत हो गया। कृपया दोबारा प्रयास करें।",
+    toggleLabel: "EN", // shown while in Hindi -> click to switch to English
+  },
+};
+
+let currentLang = localStorage.getItem(LANG_KEY) || "en";
+
+function applyLang(lang) {
+  currentLang = lang;
+  const text = UI_TEXT[lang];
+
+  headerSubtitle.textContent = text.subtitle;
+  chatFooter.textContent = text.footer;
+  userInput.placeholder = text.placeholder;
+  langToggle.textContent = text.toggleLabel;
+
+  // Only overwrite the greeting bubble if the user hasn't started chatting yet
+  const history = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+  if (history.length === 0) {
+    welcomeMessage.textContent = text.welcome;
+  }
+
+  // Swap the suggestion chip labels to the selected language
+  if (suggestions) {
+    suggestions.querySelectorAll(".chip").forEach((chip) => {
+      const label = lang === "hi" ? chip.dataset.hi : chip.dataset.en;
+      if (label) chip.textContent = label;
+    });
+  }
+}
+
+applyLang(currentLang);
+
+langToggle.addEventListener("click", () => {
+  const newLang = currentLang === "en" ? "hi" : "en";
+  applyLang(newLang);
+  localStorage.setItem(LANG_KEY, newLang);
 });
 
 // ---------- Chat history persistence ----------
@@ -92,7 +151,7 @@ function showRelatedQuestions(relatedList) {
 
   const label = document.createElement("div");
   label.classList.add("related-label");
-  label.textContent = "You might also ask:";
+  label.textContent = currentLang === "hi" ? "आप यह भी पूछ सकते हैं:" : "You might also ask:";
   chatBox.appendChild(label);
 
   const box = document.createElement("div");
@@ -144,7 +203,7 @@ async function sendMessage(prefilledText) {
     const response = await fetch("/get_response", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: message })
+      body: JSON.stringify({ message: message, lang: currentLang })
     });
 
     const data = await response.json();
@@ -156,7 +215,7 @@ async function sendMessage(prefilledText) {
     }, 500);
   } catch (error) {
     removeTypingIndicator();
-    addMessage("Something went wrong. Please try again.", "bot");
+    addMessage(UI_TEXT[currentLang].error, "bot");
   }
 }
 
