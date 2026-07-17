@@ -51,8 +51,8 @@ SIMILARITY_THRESHOLD = 0.25
 FALLBACK_MESSAGES = {
     "en": ("Sorry, I couldn't understand that. Please try asking "
            "about admission, fees, courses, hostel, or college timings."),
-    "hi": ("क्षमा करें, मैं समझ नहीं पाया। कृपया दाखिला, फीस, कोर्स, "
-           "हॉस्टल, या कॉलेज के समय के बारे में पूछें।"),
+    "hi": ("Sorry, mujhe samajh nahi aaya. Please admission, fees, courses, "
+           "hostel, ya college timings ke baare mein poochiye."),
 }
 
 
@@ -122,7 +122,7 @@ def get_response():
         lang = "en"
 
     if not user_message.strip():
-        empty_prompt = "Please type a question." if lang == "en" else "कृपया अपना प्रश्न लिखें।"
+        empty_prompt = "Please type a question." if lang == "en" else "Please apna sawaal type karen."
         return jsonify({"answer": empty_prompt, "related": []})
 
     answer, related = get_best_match(user_message, lang)
