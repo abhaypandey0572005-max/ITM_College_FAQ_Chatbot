@@ -2,265 +2,265 @@
   {
     "question": "What is the admission process?",
     "answer": "Admission process is simple. You can either visit the college campus and select the course you are interested in, pay the fee, and enroll directly. Or you can take admission through counseling.",
-    "question_hi": "दाखिले की प्रक्रिया क्या है?",
-    "answer_hi": "दाखिले की प्रक्रिया आसान है। आप कॉलेज कैंपस में जाकर अपनी पसंद का कोर्स चुन सकते हैं, फीस जमा करके सीधे दाखिला ले सकते हैं। या फिर आप काउंसलिंग के माध्यम से भी दाखिला ले सकते हैं।"
+    "question_hi": "Admission process kya hai?",
+    "answer_hi": "Admission process bahut simple hai. Aap college campus mein jaakar apni pasand ka course choose kar sakte hain, fee jama karke seedha admission le sakte hain. Ya phir aap counseling ke through bhi admission le sakte hain."
   },
   {
     "question": "How do I take admission by visiting college?",
     "answer": "Visit the college, select your desired course, pay the fee for that course, and complete your enrollment.",
-    "question_hi": "कॉलेज जाकर दाखिला कैसे लें?",
-    "answer_hi": "कॉलेज जाएं, अपना मनचाहा कोर्स चुनें, उस कोर्स की फीस जमा करें, और अपना दाखिला पूरा करें।"
+    "question_hi": "College jaakar admission kaise lein?",
+    "answer_hi": "College jaayen, apna pasandida course chunen, us course ki fee jama karen, aur apna admission complete karen."
   },
   {
     "question": "What courses are offered by the college?",
     "answer": "The college offers B.Tech (CSE, CSE-AI&ML, CSE-Data Science, Mechanical, Civil, Electronics & Communication, Electronics-VLSI, Electronics-Advanced Communication), B.Tech Lateral Entry, M.Tech (CSE), Polytechnic Diploma (CSE, Electrical, Civil, Mechanical), BBA, MBA, BCA, and MCA.",
-    "question_hi": "कॉलेज में कौन-कौन से कोर्स उपलब्ध हैं?",
-    "answer_hi": "कॉलेज में बी.टेक (सीएसई, सीएसई-एआई एंड एमएल, सीएसई-डेटा साइंस, मैकेनिकल, सिविल, इलेक्ट्रॉनिक्स एंड कम्युनिकेशन, इलेक्ट्रॉनिक्स-वीएलएसआई, इलेक्ट्रॉनिक्स-एडवांस्ड कम्युनिकेशन), बी.टेक लेटरल एंट्री, एम.टेक (सीएसई), पॉलिटेक्निक डिप्लोमा (सीएसई, इलेक्ट्रिकल, सिविल, मैकेनिकल), बीबीए, एमबीए, बीसीए और एमसीए कोर्स उपलब्ध हैं।"
+    "question_hi": "College mein kaun kaun se courses available hain?",
+    "answer_hi": "College mein B.Tech (CSE, CSE-AI&ML, CSE-Data Science, Mechanical, Civil, Electronics & Communication, Electronics-VLSI, Electronics-Advanced Communication), B.Tech Lateral Entry, M.Tech (CSE), Polytechnic Diploma (CSE, Electrical, Civil, Mechanical), BBA, MBA, BCA, aur MCA courses available hain."
   },
   {
     "question": "What is the fee for BCA?",
     "answer": "BCA fee is approximately 50,000 rupees plus 3,500 rupees examination fee.",
-    "question_hi": "बीसीए की फीस कितनी है?",
-    "answer_hi": "बीसीए की फीस लगभग 50,000 रुपये और 3,500 रुपये परीक्षा शुल्क है।"
+    "question_hi": "BCA ki fee kitni hai?",
+    "answer_hi": "BCA ki fee lagbhag 50,000 rupaye plus 3,500 rupaye exam fee hai."
   },
   {
     "question": "What is the fee for BBA?",
     "answer": "BBA fee is approximately 50,000 rupees plus 3,500 rupees examination fee.",
-    "question_hi": "बीबीए की फीस कितनी है?",
-    "answer_hi": "बीबीए की फीस लगभग 50,000 रुपये और 3,500 रुपये परीक्षा शुल्क है।"
+    "question_hi": "BBA ki fee kitni hai?",
+    "answer_hi": "BBA ki fee lagbhag 50,000 rupaye plus 3,500 rupaye exam fee hai."
   },
   {
     "question": "What is the fee for B.Tech?",
     "answer": "B.Tech fee is approximately 80,000 to 85,000 rupees plus 5,000 to 6,000 rupees examination fee.",
-    "question_hi": "बी.टेक की फीस कितनी है?",
-    "answer_hi": "बी.टेक की फीस लगभग 80,000 से 85,000 रुपये और 5,000 से 6,000 रुपये परीक्षा शुल्क है।"
+    "question_hi": "B.Tech ki fee kitni hai?",
+    "answer_hi": "B.Tech ki fee lagbhag 80,000 se 85,000 rupaye plus 5,000 se 6,000 rupaye exam fee hai."
   },
   {
     "question": "What is the fee for B.Pharma?",
     "answer": "B.Pharma fee is approximately 1,10,000 rupees plus 5,000 rupees examination fee.",
-    "question_hi": "बी.फार्मा की फीस कितनी है?",
-    "answer_hi": "बी.फार्मा की फीस लगभग 1,10,000 रुपये और 5,000 रुपये परीक्षा शुल्क है।"
+    "question_hi": "B.Pharma ki fee kitni hai?",
+    "answer_hi": "B.Pharma ki fee lagbhag 1,10,000 rupaye plus 5,000 rupaye exam fee hai."
   },
   {
     "question": "What is the fee for D.Pharma?",
     "answer": "D.Pharma fee is approximately 80,000 rupees.",
-    "question_hi": "डी.फार्मा की फीस कितनी है?",
-    "answer_hi": "डी.फार्मा की फीस लगभग 80,000 रुपये है।"
+    "question_hi": "D.Pharma ki fee kitni hai?",
+    "answer_hi": "D.Pharma ki fee lagbhag 80,000 rupaye hai."
   },
   {
     "question": "What is the college timing?",
     "answer": "College timing is from 9:10 AM to 4:20 PM.",
-    "question_hi": "कॉलेज का समय क्या है?",
-    "answer_hi": "कॉलेज का समय सुबह 9:10 बजे से शाम 4:20 बजे तक है।"
+    "question_hi": "College ka timing kya hai?",
+    "answer_hi": "College ka timing subah 9:10 baje se shaam 4:20 baje tak hai."
   },
   {
     "question": "Is hostel facility available?",
     "answer": "Yes, hostel facility is available. Non-AC hostel fee is approximately 65,000 rupees and AC hostel fee is approximately 75,000 rupees.",
-    "question_hi": "क्या हॉस्टल की सुविधा उपलब्ध है?",
-    "answer_hi": "हां, हॉस्टल की सुविधा उपलब्ध है। नॉन-एसी हॉस्टल की फीस लगभग 65,000 रुपये और एसी हॉस्टल की फीस लगभग 75,000 रुपये है।"
+    "question_hi": "Kya hostel facility available hai?",
+    "answer_hi": "Haan, hostel facility available hai. Non-AC hostel ki fee lagbhag 65,000 rupaye aur AC hostel ki fee lagbhag 75,000 rupaye hai."
   },
   {
     "question": "What is the hostel fee?",
     "answer": "Non-AC hostel fee is around 65,000 rupees per year, and AC hostel fee is around 75,000 rupees per year.",
-    "question_hi": "हॉस्टल की फीस कितनी है?",
-    "answer_hi": "नॉन-एसी हॉस्टल की फीस लगभग 65,000 रुपये प्रति वर्ष और एसी हॉस्टल की फीस लगभग 75,000 रुपये प्रति वर्ष है।"
+    "question_hi": "Hostel ki fee kitni hai?",
+    "answer_hi": "Non-AC hostel ki fee lagbhag 65,000 rupaye per year, aur AC hostel ki fee lagbhag 75,000 rupaye per year hai."
   },
   {
     "question": "Where is the college located?",
     "answer": "The college, Institute of Technology and Management, is located at AL-1, Sector-7, GIDA, Gorakhpur, Uttar Pradesh, 273029, on the Gorakhpur-Lucknow National Highway, about 12 km from Gorakhpur city.",
-    "question_hi": "कॉलेज कहाँ स्थित है?",
-    "answer_hi": "कॉलेज, इंस्टीट्यूट ऑफ टेक्नोलॉजी एंड मैनेजमेंट, एएल-1, सेक्टर-7, जीआईडीए, गोरखपुर, उत्तर प्रदेश, 273029 में गोरखपुर-लखनऊ नेशनल हाईवे पर स्थित है, जो गोरखपुर शहर से लगभग 12 किमी दूर है।"
+    "question_hi": "College kahan located hai?",
+    "answer_hi": "College, Institute of Technology and Management, AL-1, Sector-7, GIDA, Gorakhpur, Uttar Pradesh, 273029 mein, Gorakhpur-Lucknow National Highway par located hai, jo Gorakhpur city se lagbhag 12 km door hai."
   },
   {
     "question": "What is the full name of the college?",
     "answer": "Institute of Technology and Management (ITM), GIDA, Gorakhpur.",
-    "question_hi": "कॉलेज का पूरा नाम क्या है?",
-    "answer_hi": "इंस्टीट्यूट ऑफ टेक्नोलॉजी एंड मैनेजमेंट (आईटीएम), जीआईडीए, गोरखपुर।"
+    "question_hi": "College ka full name kya hai?",
+    "answer_hi": "Institute of Technology and Management (ITM), GIDA, Gorakhpur."
   },
   {
     "question": "When was the college established?",
     "answer": "The Institute of Technology and Management was established in July 2001 under the patronage of Shree Krishna Educational Society.",
-    "question_hi": "कॉलेज की स्थापना कब हुई थी?",
-    "answer_hi": "इंस्टीट्यूट ऑफ टेक्नोलॉजी एंड मैनेजमेंट की स्थापना जुलाई 2001 में श्री कृष्ण एजुकेशनल सोसाइटी के संरक्षण में हुई थी।"
+    "question_hi": "College ki sthapna kab hui thi?",
+    "answer_hi": "Institute of Technology and Management ki sthapna July 2001 mein Shree Krishna Educational Society ke patronage mein hui thi."
   },
   {
     "question": "Does the college offer MCA?",
     "answer": "Yes, the college offers MCA (Master of Computer Applications), a 2 year program.",
-    "question_hi": "क्या कॉलेज में एमसीए उपलब्ध है?",
-    "answer_hi": "हां, कॉलेज में एमसीए (मास्टर ऑफ कंप्यूटर एप्लीकेशन), 2 वर्ष का कोर्स उपलब्ध है।"
+    "question_hi": "Kya college mein MCA hai?",
+    "answer_hi": "Haan, college mein MCA (Master of Computer Applications), ek 2 saal ka program available hai."
   },
   {
     "question": "Does the college offer MBA?",
     "answer": "Yes, the college offers MBA (Master of Business Administration) with specializations in HR, Marketing, Finance, IT, Logistics and Supply Chain Management, Operations Management, and Rural Development and Management. It is a 2 year program.",
-    "question_hi": "क्या कॉलेज में एमबीए उपलब्ध है?",
-    "answer_hi": "हां, कॉलेज में एमबीए (मास्टर ऑफ बिजनेस एडमिनिस्ट्रेशन) एचआर, मार्केटिंग, फाइनेंस, आईटी, लॉजिस्टिक्स एंड सप्लाई चेन मैनेजमेंट, ऑपरेशंस मैनेजमेंट और रूरल डेवलपमेंट एंड मैनेजमेंट स्पेशलाइजेशन के साथ उपलब्ध है। यह 2 वर्ष का कोर्स है।"
+    "question_hi": "Kya college mein MBA hai?",
+    "answer_hi": "Haan, college mein MBA (Master of Business Administration) HR, Marketing, Finance, IT, Logistics and Supply Chain Management, Operations Management, aur Rural Development and Management specializations ke saath available hai. Ye 2 saal ka program hai."
   },
   {
     "question": "What is the duration of BCA course?",
     "answer": "BCA (Bachelor of Computer Applications) is a 3 year program.",
-    "question_hi": "बीसीए कोर्स की अवधि कितनी है?",
-    "answer_hi": "बीसीए (बैचलर ऑफ कंप्यूटर एप्लीकेशन) 3 वर्ष का कोर्स है।"
+    "question_hi": "BCA course ki duration kitni hai?",
+    "answer_hi": "BCA (Bachelor of Computer Applications) 3 saal ka program hai."
   },
   {
     "question": "What is the duration of BBA course?",
     "answer": "BBA (Bachelor of Business Administration) is a 3 year program.",
-    "question_hi": "बीबीए कोर्स की अवधि कितनी है?",
-    "answer_hi": "बीबीए (बैचलर ऑफ बिजनेस एडमिनिस्ट्रेशन) 3 वर्ष का कोर्स है।"
+    "question_hi": "BBA course ki duration kitni hai?",
+    "answer_hi": "BBA (Bachelor of Business Administration) 3 saal ka program hai."
   },
   {
     "question": "What is the duration of B.Tech course?",
     "answer": "B.Tech is a 4 year program. B.Tech Lateral Entry (for diploma or B.Sc. holders directly into 2nd year) is a 3 year program.",
-    "question_hi": "बी.टेक कोर्स की अवधि कितनी है?",
-    "answer_hi": "बी.टेक 4 वर्ष का कोर्स है। बी.टेक लेटरल एंट्री (डिप्लोमा या बीएससी धारकों के लिए सीधे दूसरे वर्ष में) 3 वर्ष का कोर्स है।"
+    "question_hi": "B.Tech course ki duration kitni hai?",
+    "answer_hi": "B.Tech 4 saal ka program hai. B.Tech Lateral Entry (diploma ya B.Sc. holders ke liye seedha 2nd year mein) 3 saal ka program hai."
   },
   {
     "question": "Does the college offer M.Tech?",
     "answer": "Yes, the college offers M.Tech in Computer Science & Engineering, a 2 year program.",
-    "question_hi": "क्या कॉलेज में एम.टेक उपलब्ध है?",
-    "answer_hi": "हां, कॉलेज में कंप्यूटर साइंस एंड इंजीनियरिंग में एम.टेक, 2 वर्ष का कोर्स उपलब्ध है।"
+    "question_hi": "Kya college mein M.Tech hai?",
+    "answer_hi": "Haan, college mein Computer Science & Engineering mein M.Tech, ek 2 saal ka program available hai."
   },
   {
     "question": "What branches are available in B.Tech?",
     "answer": "B.Tech branches include Computer Science & Engineering, CSE (AI & ML), CSE (Data Science), Mechanical Engineering, Civil Engineering, Electronics & Communication Engineering, Electronics Engineering (VLSI Design & Technology), and Electronics Engineering (Advanced Communication Technology).",
-    "question_hi": "बी.टेक में कौन-कौन सी ब्रांच उपलब्ध हैं?",
-    "answer_hi": "बी.टेक की ब्रांच में कंप्यूटर साइंस एंड इंजीनियरिंग, सीएसई (एआई एंड एमएल), सीएसई (डेटा साइंस), मैकेनिकल इंजीनियरिंग, सिविल इंजीनियरिंग, इलेक्ट्रॉनिक्स एंड कम्युनिकेशन इंजीनियरिंग, इलेक्ट्रॉनिक्स इंजीनियरिंग (वीएलएसआई डिजाइन एंड टेक्नोलॉजी), और इलेक्ट्रॉनिक्स इंजीनियरिंग (एडवांस्ड कम्युनिकेशन टेक्नोलॉजी) शामिल हैं।"
+    "question_hi": "B.Tech mein kaun kaun si branches available hain?",
+    "answer_hi": "B.Tech ki branches mein Computer Science & Engineering, CSE (AI & ML), CSE (Data Science), Mechanical Engineering, Civil Engineering, Electronics & Communication Engineering, Electronics Engineering (VLSI Design & Technology), aur Electronics Engineering (Advanced Communication Technology) shamil hain."
   },
   {
     "question": "Does the college offer Polytechnic diploma courses?",
     "answer": "Yes, Polytechnic diploma courses are offered in Computer Science & Engineering, Electrical Engineering, Civil Engineering, and Mechanical Engineering (Production), each of 3 years duration.",
-    "question_hi": "क्या कॉलेज में पॉलिटेक्निक डिप्लोमा कोर्स उपलब्ध हैं?",
-    "answer_hi": "हां, पॉलिटेक्निक डिप्लोमा कोर्स कंप्यूटर साइंस एंड इंजीनियरिंग, इलेक्ट्रिकल इंजीनियरिंग, सिविल इंजीनियरिंग और मैकेनिकल इंजीनियरिंग (प्रोडक्शन) में उपलब्ध हैं, प्रत्येक की अवधि 3 वर्ष है।"
+    "question_hi": "Kya college mein Polytechnic diploma courses hain?",
+    "answer_hi": "Haan, Polytechnic diploma courses Computer Science & Engineering, Electrical Engineering, Civil Engineering, aur Mechanical Engineering (Production) mein available hain, har ek ki duration 3 saal hai."
   },
   {
     "question": "What is the eligibility for B.Tech admission?",
     "answer": "Candidates must have passed Intermediate (12th) with Physics and Mathematics as compulsory subjects, obtaining at least 45% marks (40% for reserved category candidates) in these subjects together.",
-    "question_hi": "बी.टेक दाखिले के लिए योग्यता क्या है?",
-    "answer_hi": "उम्मीदवार को फिजिक्स और मैथमेटिक्स अनिवार्य विषयों के साथ इंटरमीडिएट (12वीं) पास होना चाहिए, इन विषयों में कम से कम 45% अंक (आरक्षित श्रेणी के लिए 40%) होने चाहिए।"
+    "question_hi": "B.Tech admission ke liye eligibility kya hai?",
+    "answer_hi": "Candidate ko Physics aur Mathematics compulsory subjects ke saath Intermediate (12th) pass hona chahiye, in subjects mein kam se kam 45% marks (reserved category ke liye 40%) hone chahiye."
   },
   {
     "question": "What is the eligibility for BCA admission?",
     "answer": "Candidates who have passed Intermediate (12th) or an equivalent examination with a minimum of 40% marks are eligible for BCA.",
-    "question_hi": "बीसीए दाखिले के लिए योग्यता क्या है?",
-    "answer_hi": "इंटरमीडिएट (12वीं) या समकक्ष परीक्षा कम से कम 40% अंकों के साथ पास करने वाले उम्मीदवार बीसीए के लिए योग्य हैं।"
+    "question_hi": "BCA admission ke liye eligibility kya hai?",
+    "answer_hi": "Intermediate (12th) ya equivalent exam kam se kam 40% marks ke saath pass karne wale candidates BCA ke liye eligible hain."
   },
   {
     "question": "What is the eligibility for BBA admission?",
     "answer": "Candidates who have passed Intermediate (12th) or an equivalent examination with a minimum of 40% marks are eligible for BBA.",
-    "question_hi": "बीबीए दाखिले के लिए योग्यता क्या है?",
-    "answer_hi": "इंटरमीडिएट (12वीं) या समकक्ष परीक्षा कम से कम 40% अंकों के साथ पास करने वाले उम्मीदवार बीबीए के लिए योग्य हैं।"
+    "question_hi": "BBA admission ke liye eligibility kya hai?",
+    "answer_hi": "Intermediate (12th) ya equivalent exam kam se kam 40% marks ke saath pass karne wale candidates BBA ke liye eligible hain."
   },
   {
     "question": "What is the eligibility for MBA admission?",
     "answer": "Candidates must have passed a three year Bachelor's degree from a recognized Indian University with a minimum of 50% marks (45% for SC/ST candidates).",
-    "question_hi": "एमबीए दाखिले के लिए योग्यता क्या है?",
-    "answer_hi": "उम्मीदवार के पास किसी मान्यता प्राप्त भारतीय विश्वविद्यालय से तीन वर्षीय स्नातक डिग्री कम से कम 50% अंकों के साथ (एससी/एसटी उम्मीदवारों के लिए 45%) होनी चाहिए।"
+    "question_hi": "MBA admission ke liye eligibility kya hai?",
+    "answer_hi": "Candidate ke paas kisi recognized Indian University se three year Bachelor's degree kam se kam 50% marks ke saath (SC/ST candidates ke liye 45%) honi chahiye."
   },
   {
     "question": "What is the eligibility for MCA admission?",
     "answer": "Candidates must have passed any graduation degree (B.E./B.Tech/B.Sc/B.Com/B.A/BCA etc.), preferably with Mathematics at 10+2 or graduation level, with at least 50% marks (45% for reserved category).",
-    "question_hi": "एमसीए दाखिले के लिए योग्यता क्या है?",
-    "answer_hi": "उम्मीदवार के पास कोई भी स्नातक डिग्री (बीई/बीटेक/बीएससी/बीकॉम/बीए/बीसीए आदि) होनी चाहिए, अधिमानतः 10+2 या स्नातक स्तर पर मैथमेटिक्स के साथ, कम से कम 50% अंकों के साथ (आरक्षित श्रेणी के लिए 45%)।"
+    "question_hi": "MCA admission ke liye eligibility kya hai?",
+    "answer_hi": "Candidate ke paas koi bhi graduation degree (B.E./B.Tech/B.Sc/B.Com/B.A/BCA etc.) honi chahiye, preferably 10+2 ya graduation level par Mathematics ke saath, kam se kam 50% marks ke saath (reserved category ke liye 45%)."
   },
   {
     "question": "What is Polytechnic course fee?",
     "answer": "Exact Polytechnic fee is not confirmed yet. Please contact the college office for updated fee details.",
-    "question_hi": "पॉलिटेक्निक कोर्स की फीस कितनी है?",
-    "answer_hi": "पॉलिटेक्निक की सटीक फीस अभी तय नहीं है। कृपया अपडेटेड फीस जानकारी के लिए कॉलेज कार्यालय से संपर्क करें।"
+    "question_hi": "Polytechnic course ki fee kya hai?",
+    "answer_hi": "Polytechnic ki exact fee abhi confirm nahi hai. Updated fee details ke liye please college office se contact karen."
   },
   {
     "question": "How can I contact the college?",
     "answer": "You can contact the college at +91-8081209500, or email director@itmgkp.edu.in. The college is located at AL-1, Sector-7, GIDA, Gorakhpur-273029.",
-    "question_hi": "कॉलेज से संपर्क कैसे करें?",
-    "answer_hi": "आप कॉलेज से +91-8081209500 पर या director@itmgkp.edu.in पर ईमेल करके संपर्क कर सकते हैं। कॉलेज एएल-1, सेक्टर-7, जीआईडीए, गोरखपुर-273029 में स्थित है।"
+    "question_hi": "College se contact kaise karen?",
+    "answer_hi": "Aap college se +91-8081209500 par ya director@itmgkp.edu.in par email karke contact kar sakte hain. College AL-1, Sector-7, GIDA, Gorakhpur-273029 mein located hai."
   },
   {
     "question": "What is the college phone number?",
     "answer": "The college contact number is +91-8081209500.",
-    "question_hi": "कॉलेज का फोन नंबर क्या है?",
-    "answer_hi": "कॉलेज का संपर्क नंबर +91-8081209500 है।"
+    "question_hi": "College ka phone number kya hai?",
+    "answer_hi": "College ka contact number +91-8081209500 hai."
   },
   {
     "question": "What is the college email address?",
     "answer": "You can email the college at director@itmgkp.edu.in or director.itm@gmail.com.",
-    "question_hi": "कॉलेज का ईमेल पता क्या है?",
-    "answer_hi": "आप कॉलेज को director@itmgkp.edu.in या director.itm@gmail.com पर ईमेल कर सकते हैं।"
+    "question_hi": "College ka email address kya hai?",
+    "answer_hi": "Aap college ko director@itmgkp.edu.in ya director.itm@gmail.com par email kar sakte hain."
   },
   {
     "question": "What documents are required for admission?",
     "answer": "Required documents include 5 colored passport size photographs, original 10th class certificate, original 12th class marksheet, photocopies of 10th and 12th certificates, UPSEE seat allotment letter, caste certificate (for SC/ST/OBC), UPSEE rank letter (for direct admission if applicable), domicile certificate, and income certificate.",
-    "question_hi": "दाखिले के लिए कौन-कौन से दस्तावेज़ चाहिए?",
-    "answer_hi": "आवश्यक दस्तावेजों में 5 रंगीन पासपोर्ट साइज फोटो, मूल 10वीं कक्षा प्रमाणपत्र, मूल 12वीं कक्षा मार्कशीट, 10वीं और 12वीं प्रमाणपत्रों की फोटोकॉपी, यूपीएसईई सीट आवंटन पत्र, जाति प्रमाणपत्र (एससी/एसटी/ओबीसी के लिए), यूपीएसईई रैंक पत्र (यदि लागू हो), निवास प्रमाणपत्र, और आय प्रमाणपत्र शामिल हैं।"
+    "question_hi": "Admission ke liye kaun se documents chahiye?",
+    "answer_hi": "Required documents mein 5 colored passport size photos, original 10th class certificate, original 12th class marksheet, 10th aur 12th certificates ki photocopies, UPSEE seat allotment letter, caste certificate (SC/ST/OBC ke liye), UPSEE rank letter (agar applicable ho), domicile certificate, aur income certificate shamil hain."
   },
   {
     "question": "Is there a scholarship facility?",
     "answer": "Please contact the college administration office at +91-8081209500 for information about scholarships and financial aid.",
-    "question_hi": "क्या स्कॉलरशिप की सुविधा उपलब्ध है?",
-    "answer_hi": "स्कॉलरशिप और वित्तीय सहायता की जानकारी के लिए कृपया कॉलेज प्रशासन कार्यालय से +91-8081209500 पर संपर्क करें।"
+    "question_hi": "Kya scholarship facility hai?",
+    "answer_hi": "Scholarship aur financial aid ki information ke liye please college administration office se +91-8081209500 par contact karen."
   },
   {
     "question": "What is the exam pattern?",
     "answer": "Exam pattern details vary by course and are set according to AKTU (for degree courses) or BTE (for Polytechnic). Please check with your department or the examination office for specifics.",
-    "question_hi": "परीक्षा पैटर्न क्या है?",
-    "answer_hi": "परीक्षा पैटर्न कोर्स के अनुसार अलग-अलग होता है और एकेटीयू (डिग्री कोर्सेज के लिए) या बीटीई (पॉलिटेक्निक के लिए) के अनुसार निर्धारित किया जाता है। विशेष जानकारी के लिए कृपया अपने विभाग या परीक्षा कार्यालय से संपर्क करें।"
+    "question_hi": "Exam pattern kya hai?",
+    "answer_hi": "Exam pattern course ke hisaab se alag hota hai aur AKTU (degree courses ke liye) ya BTE (Polytechnic ke liye) ke according set kiya jaata hai. Specific details ke liye apne department ya examination office se check karen."
   },
   {
     "question": "What is the attendance requirement?",
     "answer": "Students must attend all lectures, tutorials, practicals and other prescribed activities. Attendance shortfall can be condoned up to 25% on medical or genuine grounds, with a further relaxation of up to 15% possible with the Head of Institution's approval. Students not meeting the overall attendance requirement may not be allowed to appear in end semester exams.",
-    "question_hi": "उपस्थिति की आवश्यकता क्या है?",
-    "answer_hi": "छात्रों को सभी लेक्चर, ट्यूटोरियल, प्रैक्टिकल और अन्य निर्धारित गतिविधियों में उपस्थित रहना आवश्यक है। मेडिकल या वास्तविक कारणों पर 25% तक उपस्थिति की छूट दी जा सकती है, और संस्थान प्रमुख की मंजूरी से 15% तक अतिरिक्त छूट संभव है। कुल उपस्थिति आवश्यकता पूरी न करने वाले छात्रों को सेमेस्टर परीक्षा में बैठने की अनुमति नहीं दी जा सकती।"
+    "question_hi": "Attendance requirement kya hai?",
+    "answer_hi": "Students ko sabhi lectures, tutorials, practicals aur other prescribed activities mein attend karna zaroori hai. Attendance shortfall medical ya genuine grounds par 25% tak condone ho sakti hai, aur Head of Institution ki approval se 15% tak further relaxation possible hai. Overall attendance requirement pura na karne wale students ko end semester exams mein baithne ki permission nahi mil sakti."
   },
   {
     "question": "Is there a canteen in the college?",
     "answer": "Yes, the college has a canteen facility on campus.",
-    "question_hi": "क्या कॉलेज में कैंटीन है?",
-    "answer_hi": "हां, कॉलेज में कैंपस के अंदर कैंटीन की सुविधा है।"
+    "question_hi": "Kya college mein canteen hai?",
+    "answer_hi": "Haan, college mein campus ke andar canteen facility hai."
   },
   {
     "question": "Is there a transport facility?",
     "answer": "Yes, the college provides a transport facility for students.",
-    "question_hi": "क्या कॉलेज में परिवहन की सुविधा है?",
-    "answer_hi": "हां, कॉलेज छात्रों के लिए परिवहन की सुविधा प्रदान करता है।"
+    "question_hi": "Kya college mein transport facility hai?",
+    "answer_hi": "Haan, college students ke liye transport facility provide karta hai."
   },
   {
     "question": "Is internet facility available in college?",
     "answer": "Yes, the college provides 24x7 internet facility on campus.",
-    "question_hi": "क्या कॉलेज में इंटरनेट की सुविधा है?",
-    "answer_hi": "हां, कॉलेज कैंपस में 24x7 इंटरनेट की सुविधा प्रदान करता है।"
+    "question_hi": "Kya college mein internet facility hai?",
+    "answer_hi": "Haan, college campus mein 24x7 internet facility provide karta hai."
   },
   {
     "question": "Does the college have a library?",
     "answer": "Yes, the college has a library facility for students. Details are available under the Academics section of the college website.",
-    "question_hi": "क्या कॉलेज में लाइब्रेरी है?",
-    "answer_hi": "हां, कॉलेज में छात्रों के लिए लाइब्रेरी की सुविधा है। विस्तृत जानकारी कॉलेज वेबसाइट के एकेडमिक्स सेक्शन में उपलब्ध है।"
+    "question_hi": "Kya college mein library hai?",
+    "answer_hi": "Haan, college mein students ke liye library facility hai. Details college website ke Academics section mein available hain."
   },
   {
     "question": "Does the college help with placements?",
     "answer": "Yes, the college has a Corporate Relations and Placements cell that works with recruiting companies to help place students.",
-    "question_hi": "क्या कॉलेज प्लेसमेंट में मदद करता है?",
-    "answer_hi": "हां, कॉलेज में कॉर्पोरेट रिलेशंस एंड प्लेसमेंट सेल है जो भर्ती करने वाली कंपनियों के साथ मिलकर छात्रों को प्लेसमेंट दिलाने में मदद करता है।"
+    "question_hi": "Kya college placements mein help karta hai?",
+    "answer_hi": "Haan, college mein Corporate Relations and Placements cell hai jo recruiting companies ke saath milkar students ko placement dilane mein help karta hai."
   },
   {
     "question": "What is ragging policy of the college?",
     "answer": "Ragging is strictly banned in the institution. Anyone found indulging in ragging can face punishment including expulsion, suspension, fine, withholding of scholarships or results, or debarment from events.",
-    "question_hi": "कॉलेज की रैगिंग नीति क्या है?",
-    "answer_hi": "संस्थान में रैगिंग पूरी तरह प्रतिबंधित है। रैगिंग में शामिल पाए जाने वाले किसी भी व्यक्ति को निष्कासन, निलंबन, जुर्माना, स्कॉलरशिप या परिणाम रोकना, या कार्यक्रमों से वंचित करने जैसी सजा दी जा सकती है।"
+    "question_hi": "College ki ragging policy kya hai?",
+    "answer_hi": "Institution mein ragging strictly banned hai. Ragging mein involved paaye jaane wale kisi bhi vyakti ko expulsion, suspension, fine, scholarship ya result rokna, ya events se debar karne jaisi punishment mil sakti hai."
   },
   {
     "question": "Which university is the college affiliated to?",
     "answer": "Engineering, Management (BBA/MBA), and Computer Application (BCA/MCA) programs are affiliated to AKTU (Dr. A.P.J. Abdul Kalam Technical University), Lucknow. Polytechnic programs are affiliated to BTE (Board of Technical Education).",
-    "question_hi": "कॉलेज किस विश्वविद्यालय से संबद्ध है?",
-    "answer_hi": "इंजीनियरिंग, मैनेजमेंट (बीबीए/एमबीए), और कंप्यूटर एप्लीकेशन (बीसीए/एमसीए) प्रोग्राम एकेटीयू (डॉ. ए.पी.जे. अब्दुल कलाम टेक्निकल यूनिवर्सिटी), लखनऊ से संबद्ध हैं। पॉलिटेक्निक प्रोग्राम बीटीई (बोर्ड ऑफ टेक्निकल एजुकेशन) से संबद्ध हैं।"
+    "question_hi": "College kis university se affiliated hai?",
+    "answer_hi": "Engineering, Management (BBA/MBA), aur Computer Application (BCA/MCA) programs AKTU (Dr. A.P.J. Abdul Kalam Technical University), Lucknow se affiliated hain. Polytechnic programs BTE (Board of Technical Education) se affiliated hain."
   },
   {
     "question": "Is the college AICTE approved?",
     "answer": "Yes, the Engineering, Management, Computer Application, and Polytechnic programs are approved by AICTE (All India Council for Technical Education).",
-    "question_hi": "क्या कॉलेज एआईसीटीई से अनुमोदित है?",
-    "answer_hi": "हां, इंजीनियरिंग, मैनेजमेंट, कंप्यूटर एप्लीकेशन और पॉलिटेक्निक प्रोग्राम एआईसीटीई (ऑल इंडिया काउंसिल फॉर टेक्निकल एजुकेशन) से अनुमोदित हैं।"
+    "question_hi": "Kya college AICTE approved hai?",
+    "answer_hi": "Haan, Engineering, Management, Computer Application, aur Polytechnic programs AICTE (All India Council for Technical Education) se approved hain."
   },
   {
     "question": "How can I register online for admission?",
     "answer": "You can fill out the online registration form available on the college website's admission section to begin the registration process.",
-    "question_hi": "मैं दाखिले के लिए ऑनलाइन रजिस्ट्रेशन कैसे करूं?",
-    "answer_hi": "आप रजिस्ट्रेशन प्रक्रिया शुरू करने के लिए कॉलेज वेबसाइट के दाखिला सेक्शन में उपलब्ध ऑनलाइन रजिस्ट्रेशन फॉर्म भर सकते हैं।"
+    "question_hi": "Main admission ke liye online register kaise karu?",
+    "answer_hi": "Aap registration process start karne ke liye college website ke admission section mein available online registration form fill kar sakte hain."
   }
 ]
