@@ -1,82 +1,74 @@
-# ITM GIDA Gorakhpur - College FAQ Chatbot
+# 🎓 ITM GIDA Gorakhpur — College FAQ Chatbot
 
-A simple web-based chatbot built with **Flask** that answers frequently
-asked questions about Institute of Technology and Management, GIDA, Gorakhpur
-(admission process, fees, courses, hostel, timings, etc.)
+A simple, web-based FAQ chatbot built with **Flask** and **TF-IDF + Cosine Similarity** that answers common questions about **Institute of Technology and Management (ITM), GIDA, Gorakhpur** — covering admissions, courses, fee structure, hostel, timings, eligibility, placements, and more.
 
-## How it works
+🔗 **Live Demo:** https://itm-college-faq-chatbot-1.onrender.com/
 
-1. All FAQs (question + answer pairs) are stored in `faqs.json`.
-2. When a user types a message, the backend (`app.py`) compares it against
-   every stored question using Python's built-in `difflib` library, which
-   calculates a similarity score between two pieces of text.
-3. The FAQ with the highest similarity score is picked, and its answer is
-   sent back to the chat window.
-4. If nothing matches well enough, the bot replies with a fallback message
-   asking the user to rephrase.
+---
 
-## Project structure
+## ✨ Features
+
+- 🤖 Smart FAQ matching using TF-IDF + Cosine Similarity (NLP-based, not just keyword search)
+- 🌐 **Bilingual support** — English & Hinglish, switchable with one tap
+- 🌙 Light / Dark mode toggle
+- 💬 "You might also ask" — related question suggestions
+- 👍👎 Feedback buttons on every bot response
+- 💾 Chat history saved locally (persists on page reload)
+- 📱 Fully responsive, mobile-friendly UI
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend | Python, Flask |
+| NLP / Matching | scikit-learn (TF-IDF Vectorizer, Cosine Similarity) |
+| Frontend | HTML, CSS, JavaScript |
+| Deployment | Render |
+
+## 📂 Project Structure
 
 ```
-ITM_Chatbot/
-├── app.py                 # Flask backend + matching logic
-├── faqs.json              # FAQ dataset (edit this to add/change questions)
-├── requirements.txt        # Python dependencies
+ITM_College_FAQ_Chatbot/
+├── app.py              # Flask backend + TF-IDF matching logic
+├── faqs.json           # FAQ knowledge base (English + Hinglish)
+├── requirements.txt    # Python dependencies
 ├── templates/
-│   └── index.html          # Chat webpage
+│   └── index.html      # Chatbot UI
 └── static/
-    ├── style.css            # Chat UI styling
-    └── script.js            # Chat frontend logic (sends/receives messages)
+    ├── style.css        # Styling
+    └── script.js         # Chat logic, language & theme toggle
 ```
 
-## How to run it
+## 🚀 Running Locally
 
-1. Install Python (3.8 or above) if not already installed.
-2. Open a terminal in the `ITM_Chatbot` folder.
-3. Install Flask:
-   ```
-   pip install -r requirements.txt
-   ```
-4. Run the app:
-   ```
-   python app.py
-   ```
-5. Open your browser and go to:
-   ```
-   http://127.0.0.1:5000
-   ```
-6. Start chatting! Try questions like:
-   - "What is the admission process?"
-   - "How much is the BCA fee?"
-   - "What courses do you offer?"
-   - "Is hostel available?"
-
-## How to add more FAQs
-
-Just open `faqs.json` and add a new object in this format:
-
-```json
-{
-  "question": "Your new question here",
-  "answer": "Your answer here"
-}
+```bash
+git clone https://github.com/abhaypandey0572005-max/ITM_College_FAQ_Chatbot.git
+cd ITM_College_FAQ_Chatbot
+pip install -r requirements.txt
+python app.py
 ```
 
-No need to touch `app.py` — it automatically loads whatever is in `faqs.json`.
+Then open `http://127.0.0.1:5000/` in your browser.
 
-## Notes / Improvements you can make later
+## 💡 How It Works
 
-- Current matching uses simple text similarity (`difflib`). For better
-  accuracy with longer FAQ lists, you could upgrade to TF-IDF matching
-  using `scikit-learn`.
-- Fee figures used here are approximate (as told by the student) — update
-  `faqs.json` with exact figures from the college office if needed.
-- You can deploy this on free hosting like Render or PythonAnywhere for a
-  live demo link in your project submission.
+1. All FAQs are loaded from `faqs.json` when the server starts.
+2. Each FAQ question is converted into a TF-IDF vector — this captures which words matter most (e.g. "fee", "hostel") vs. common filler words.
+3. When a user asks something, their message is compared against every stored question using cosine similarity.
+4. The best-matching FAQ's answer is returned, along with the next best matches as "related questions."
+5. If no question matches well enough, a fallback message guides the user toward topics the bot can help with.
 
-## For CodeAlpha Internship Submission
+---
 
-This project can double as the **FAQ Chatbot** task for the CodeAlpha AI
-internship, in addition to being a BCA college project. Suggested repo
-name: `CodeAlpha_FAQChatbot` (if submitting there) or
-`ITM_College_FAQ_Chatbot` (for college submission).
+## 👤 About the Developer
+
+**Abhay Pandey**
+
+- 💼 LinkedIn: [linkedin.com/in/abhay-pandey-a6a2ba346](https://www.linkedin.com/in/abhay-pandey-a6a2ba346)
+- 💻 GitHub: [github.com/abhaypandey0572005-max](https://github.com/abhaypandey0572005-max)
+
+Built as a real-world project to help ITM GIDA Gorakhpur students and prospective students get instant answers to common college queries.
+
+---
+
+*⭐ If you found this project useful, consider giving it a star on GitHub!*
