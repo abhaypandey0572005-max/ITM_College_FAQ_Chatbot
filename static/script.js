@@ -5,7 +5,8 @@ const sendBtn = document.getElementById("send-btn");
 const suggestions = document.getElementById("suggestions");
 const themeToggle = document.getElementById("theme-toggle");
 const langToggle = document.getElementById("lang-toggle");
-const loader = document.getElementById("loader");
+const splashScreen = document.getElementById("splash-screen");
+const chatContainer = document.getElementById("chat-container");
 const welcomeMessage = document.getElementById("welcome-message");
 const headerSubtitle = document.getElementById("header-subtitle");
 const chatFooter = document.getElementById("chat-footer");
@@ -14,10 +15,39 @@ const STORAGE_KEY = "itm_chat_history";
 const THEME_KEY = "itm_theme";
 const LANG_KEY = "itm_lang";
 
-// ---------- Loader (shown briefly on first page load) ----------
+// ---------- Splash screen (shown briefly on first page load) ----------
 window.addEventListener("load", () => {
-  setTimeout(() => loader.classList.add("hidden"), 400);
+  setTimeout(() => {
+    splashScreen.classList.add("hidden");
+    chatContainer.classList.add("visible");
+
+    // Only play the typing animation for a first-time visitor
+    // (i.e. no saved chat history yet)
+    const history = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+    if (history.length === 0) {
+      typeWelcomeMessage(UI_TEXT[currentLang].welcome);
+    }
+  }, 1800);
 });
+
+// Typewriter effect for the initial bot greeting
+function typeWelcomeMessage(text) {
+  welcomeMessage.textContent = "";
+  welcomeMessage.classList.add("typing-cursor");
+  let i = 0;
+  const speed = 20; // ms per character
+
+  function step() {
+    if (i <= text.length) {
+      welcomeMessage.textContent = text.slice(0, i);
+      i++;
+      setTimeout(step, speed);
+    } else {
+      welcomeMessage.classList.remove("typing-cursor");
+    }
+  }
+  step();
+}
 
 // ---------- Dark mode ----------
 function applyTheme(theme) {
@@ -45,7 +75,7 @@ const UI_TEXT = {
   en: {
     subtitle: "College FAQ Assistant",
     welcome: "Hello! I'm the ITM Gorakhpur FAQ bot. Ask me about admission, fees, courses, hostel, or timings.",
-    footer: "Powered by ITM GIDA Gorakhpur · AI FAQ Assistant",
+    footer: "Powered by ITM GIDA Gorakhpur · AI FAQ Assistant<br><span class=\"dev-credit\">Made by <a href=\"https://github.com/abhaypandey0572005-max\" target=\"_blank\" rel=\"noopener\">Abhay Pandey</a></span>",
     placeholder: "Type your question here...",
     error: "Something went wrong. Please try again.",
     toggleLabel: "HI", // shown while in English -> click to switch to Hinglish
@@ -53,7 +83,7 @@ const UI_TEXT = {
   hi: {
     subtitle: "College FAQ Assistant",
     welcome: "Namaste! Main ITM Gorakhpur FAQ bot hoon. Mujhse admission, fees, courses, hostel, ya timings ke baare mein poochiye.",
-    footer: "ITM GIDA Gorakhpur dwara powered · AI FAQ Assistant",
+    footer: "ITM GIDA Gorakhpur dwara powered · AI FAQ Assistant<br><span class=\"dev-credit\">Made by <a href=\"https://github.com/abhaypandey0572005-max\" target=\"_blank\" rel=\"noopener\">Abhay Pandey</a></span>",
     placeholder: "Yahan apna sawaal type karen...",
     error: "Kuch galat ho gaya. Please dobara try karen.",
     toggleLabel: "EN", // shown while in Hinglish -> click to switch to English
@@ -67,7 +97,7 @@ function applyLang(lang) {
   const text = UI_TEXT[lang];
 
   headerSubtitle.textContent = text.subtitle;
-  chatFooter.textContent = text.footer;
+  chatFooter.innerHTML = text.footer;
   userInput.placeholder = text.placeholder;
   langToggle.textContent = text.toggleLabel;
 
