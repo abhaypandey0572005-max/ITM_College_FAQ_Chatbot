@@ -4,19 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ITM Gorakhpur - College FAQ Chatbot</title>
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon-180.png') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-  <div id="loader">
-    <div class="loader-spinner"></div>
+  <div id="splash-screen">
+    <div class="splash-content">
+      <div class="splash-icon"><img src="{{ url_for('static', filename='images/itm-logo.png') }}" alt="ITM Gorakhpur logo"></div>
+      <h1 class="splash-title">ITM GIDA Gorakhpur</h1>
+      <p class="splash-subtitle">College FAQ Assistant</p>
+      <div class="splash-loader"><span></span><span></span><span></span></div>
+    </div>
   </div>
 
   <div class="chat-container" id="chat-container">
     <div class="chat-header">
-      <div class="header-icon">🎓</div>
+      <div class="header-icon"><img src="{{ url_for('static', filename='images/itm-logo.png') }}" alt="ITM Gorakhpur logo"></div>
       <div class="header-text">
         <h2>ITM GIDA Gorakhpur</h2>
         <p><span class="status-dot"></span> <span id="header-subtitle">College FAQ Assistant</span></p>
@@ -47,7 +55,7 @@
       </button>
     </div>
 
-    <div class="chat-footer" id="chat-footer">Powered by ITM GIDA Gorakhpur · AI FAQ Assistant</div>
+    <div class="chat-footer" id="chat-footer">Powered by ITM GIDA Gorakhpur · AI FAQ Assistant<br><span class="dev-credit">Made by <a href="https://github.com/abhaypandey0572005-max" target="_blank" rel="noopener">Abhay Pandey</a></span></div>
   </div>
 
   <script src="{{ url_for('static', filename='script.js') }}"></script>
