@@ -48,6 +48,46 @@ FALLBACK_MESSAGES = {
            "हॉस्टल, या कॉलेज टाइमिंग के बारे में पूछने की कोशिश करें।")
 }
 
+# ---------- Greeting detection ----------
+# If someone just says "hi", "hello", "good morning", etc., we don't want
+# to run that through FAQ matching (it would either fail or accidentally
+# match some unrelated question). Instead we recognize these common
+# greeting words/phrases and reply with a friendly hello of our own,
+# nudging the person toward asking their real question next.
+GREETING_WORDS = {
+    "hi", "hii", "hiii", "hello", "helo", "hey", "heya", "hola",
+    "namaste", "namaskar", "yo",
+    "good morning", "good afternoon", "good evening", "good night",
+    "morning", "evening",
+    "how are you", "how r u", "whats up", "what's up", "sup",
+}
+
+GREETING_REPLIES = {
+    "en": [
+        "Hello! 👋 How can I help you today? Feel free to ask about admission, fees, courses, hostel, or anything else about ITM Gorakhpur.",
+        "Hi there! I'm doing great, thanks for asking. What would you like to know about ITM Gorakhpur - admission, fees, courses, or hostel?",
+    ],
+    "hi": [
+        "नमस्ते! 👋 आज मैं आपकी क्या मदद कर सकता हूं? एडमिशन, फीस, कोर्स, हॉस्टल या ITM गोरखपुर से जुड़ी किसी भी बात के बारे में पूछ सकते हैं।",
+        "हेलो! मैं बढ़िया हूं, पूछने के लिए शुक्रिया। आप ITM गोरखपुर के बारे में क्या जानना चाहेंगे - एडमिशन, फीस, कोर्स या हॉस्टल?",
+    ],
+}
+
+
+def is_greeting(user_message):
+    """
+    Returns True if the user's message is just a greeting/small-talk
+    (like "hi", "hello", "good morning") rather than an actual question.
+    """
+    cleaned = user_message.strip().lower().strip("?.!,")
+    # Only treat it as a pure greeting if it's short - a longer message
+    # that happens to start with "hi" (e.g. "hi, what is the fee for BCA")
+    # should still go through normal FAQ matching.
+    if len(cleaned.split()) > 4:
+        return False
+    return cleaned in GREETING_WORDS
+
+
 # ---------- Keyword shortcuts ----------
 # Single words like "location" or "hostel" don't share much text with a
 # full question like "Where is the college located?", so plain TF-IDF
@@ -128,7 +168,20 @@ def get_best_match(user_message, lang="en"):
     happens against the English questions since that's what the model
     was trained on.
     """
-    # First, check for a direct keyword shortcut (e.g. just "hostel")
+    # First, check if this is just a greeting ("hi", "hello", etc.)
+    if is_greeting(user_message):
+        replies = GREETING_REPLIES.get(lang, GREETING_REPLIES["en"])
+        reply = random.choice(replies)
+        # Suggest a few starter questions instead of random FAQs, since
+        # the person hasn't asked anything specific yet.
+        starter_questions = [
+            "What is the admission process?",
+            "What courses are offered by the college?",
+            "Is hostel facility available?",
+        ]
+        return reply, starter_questions
+
+    # Next, check for a direct keyword shortcut (e.g. just "hostel")
     keyword_index = get_keyword_match(user_message)
 
     if keyword_index is not None:
