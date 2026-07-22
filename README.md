@@ -2,8 +2,7 @@
 
 A simple, web-based FAQ chatbot built with **Flask** and **TF-IDF + Cosine Similarity** that answers common questions about **Institute of Technology and Management (ITM), GIDA, Gorakhpur** — covering admissions, courses, fee structure, hostel, timings, eligibility, placements, and more.
 
-🔗 **Live Demo:** https://itm-college-faq-chatbot-1.onrender.com/
-
+🔗 **Live Demo:** https://itm-college-faq-chatbot.vercel.app/
 ---
 
 ## ✨ Features
