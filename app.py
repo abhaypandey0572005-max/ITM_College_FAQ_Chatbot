@@ -44,8 +44,8 @@ SIMILARITY_THRESHOLD = 0.25
 FALLBACK_MESSAGES = {
     "en": ("Sorry, I couldn't understand that. Please try asking about "
            "admission, fees, courses, hostel, or college timings."),
-    "hi": ("माफ करें, मैं इसे समझ नहीं पाया। कृपया एडमिशन, फीस, कोर्स, "
-           "हॉस्टल, या कॉलेज टाइमिंग के बारे में पूछने की कोशिश करें।")
+    "hi": ("Sorry, mujhe samajh nahi aaya. Kripya admission, fees, courses, "
+           "hostel, ya college timings ke baare mein poochne ki koshish karein.")
 }
 
 # ---------- Greeting detection ----------
@@ -68,8 +68,8 @@ GREETING_REPLIES = {
         "Hi there! I'm doing great, thanks for asking. What would you like to know about ITM Gorakhpur - admission, fees, courses, or hostel?",
     ],
     "hi": [
-        "नमस्ते! 👋 आज मैं आपकी क्या मदद कर सकता हूं? एडमिशन, फीस, कोर्स, हॉस्टल या ITM गोरखपुर से जुड़ी किसी भी बात के बारे में पूछ सकते हैं।",
-        "हेलो! मैं बढ़िया हूं, पूछने के लिए शुक्रिया। आप ITM गोरखपुर के बारे में क्या जानना चाहेंगे - एडमिशन, फीस, कोर्स या हॉस्टल?",
+        "Namaste! 👋 Aaj main aapki kya madad kar sakta hoon? Admission, fees, courses, hostel, ya ITM Gorakhpur se judi kisi bhi baat ke baare mein pooch sakte hain.",
+        "Hello! Main badhiya hoon, poochne ke liye shukriya. Aap ITM Gorakhpur ke baare mein kya jaanna chahenge - admission, fees, courses, ya hostel?",
     ],
 }
 
@@ -236,7 +236,7 @@ def get_response():
     lang = data.get("lang", "en")
 
     if not user_message.strip():
-        empty_msg = "कृपया कोई प्रश्न टाइप करें।" if lang == "hi" else "Please type a question."
+        empty_msg = "Kripya koi sawaal type karein." if lang == "hi" else "Please type a question."
         return jsonify({"answer": empty_msg, "related": []})
 
     answer, related = get_best_match(user_message, lang)
